@@ -1,5 +1,7 @@
 # Inhoud van de module
 
+Je hebt inmiddels aardig wat ervaring met Python. Toch valt er nog oneindig over te leren (veel meer nog dan we hier nog kunnen toevoegen). In dit boekje breiden we je programmeer-arsenaal uit met 2 belangrijke concepten: Objects en Error Handling.
+
 Objects bieden je een andere manier om je code op te bouwen. Alles wat je tot nu toe geleerd hebt is nog steeds geldig en relevant, maar het indelen van je code in Objects heeft een aantal voordelen:
 
 * Objecten bieden extra structuur en maken daarmee je code overzichtelijker
