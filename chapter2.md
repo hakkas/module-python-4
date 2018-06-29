@@ -2,7 +2,74 @@
 
 In OOP draait alles om classes (klassen) en objects/instances (objecten of instanties).
 
-Bekijk het volgende filmpje met een voorbeeld en uitleg over de basics van Python classes:
+Je hebt al eerder met objecten leren werken, maar in deze lesbrief gaan we meer de diepte in. Een class kunnen we zien als een soort sjabloon. Of een malletje … een blauwdruk. En een object is een _instantie_ van dat sjabloon.
+
+Laten we even met het voorbeeld van een persoon verder gaan. We maken een class genaamd Persoon.
+
+```python
+class Persoon:
+    def __init__ (self, _leeftijd):
+        self.leeftijd = _leeftijd
+
+    def printLeeftijd(self):
+        print ("Ik ben " + str(self.age) + " jaar oud!")
+```
+
+Functies die in een class worden gedefinieerd worden _methoden_ genoemd. In dit geval hebben we twee methodes:
+* De ```__init__()``` methode
+* en de ```printLeeftijd()``` methode.
+
+De ```__init__()``` methode is een bijzondere. Het is namelijk een constructor: de methode die automatisch wordt aangeroepen zodra je een object van het type Persoon aanmaakt. Methoden krijgen altijd de parameter self mee. Self is een referentie naar het object zelf. Je kunt natuurlijk ook andere parameters opgeven. Die komen na self. In dit geval hebben we de constructor de parameter ```_age``` meegegeven. Dus als we een object van het type Persoon instantiëren, dan moeten we een leeftijd opgeven. Dat wordt dan opgeslagen in de property (eigenschap) self.age.
+
+Het instantiëren van een object van het type Persoon doen we zo:
+
+```python
+henk = Person(36)
+henk.printLeeftijd()
+```
+We roepen ook nog even de methode ```printLeeftijd()``` aan.
+
+Laten we onze class uitbreiden. Stel dat we ook de naam van een persoon willen opslaan. En het beroep dat iemand uitoefent. Onze class ziet er nu zo uit:
+
+```python
+class Persoon:
+  def __init__ (self, _leeftijd, _naam, _beroep):
+    self.leeftijd = _leeftijd
+    self.naam = _naam
+    self.beroep = _beroep
+
+  def printLeeftijd(self):
+    print ("Ik ben " + str(self.leeftijd) + " jaar oud")
+
+  def printBeroep(self):
+    print ("Ik ben " + self.beroep + " van beroep")
+
+  def printNaam(self):
+    print ("Ik heet " + self.naam)
+
+  def printAlles(self):
+    print ("Ik ben " + self.naam + " en ben " + str(self.leeftijd) + " jaar oud en ben " + self.beroep + " van beroep!")
+
+henk = Persoon(36, "Henk", "software ontwikkelaar")
+henk.printLeeftijd()
+henk.printNaam()
+henk.printBeroep()
+henk.printAlles()
+```
+We hebben er 4 methodes aan toegevoegd. Het leuke is dat ik natuurlijk meerdere objecten kan maken van het type Persoon. Hier een voorbeeld:
+
+```python
+henk = Persoon(36, "Henk", "software ontwikkelaar")
+luuk = Persoon(13, "Luuk", "game developer")
+jurre = Persoon(13, "Jurre", "game artist")
+
+henk.printAlles()
+luuk.printAlles()
+jurre.printAlles()
+```
+Je programmeert zo'n class dus een keer en je kunt er meerdere instanties van maken.
+
+Bekijk ook het volgende filmpje met een voorbeeld en uitleg over de basics van Python classes:
 
 {%youtube%}POQIIKb1BZA{%endyoutube%}
 
