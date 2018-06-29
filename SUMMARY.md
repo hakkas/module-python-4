@@ -1,3 +1,6 @@
 # Summary
 
-* [First Chapter](chapter1.md)
+* [Inhoud van de module](chapter1.md)
+* [Classes](chapter2.md)
+* [Overerving](chapter3.md)
+* [Foutafhandeling](chapter4.md)

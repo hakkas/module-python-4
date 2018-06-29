@@ -1,3 +1,3 @@
-# My Awesome Book
+# Module Python-4
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+Je hebt inmiddels aardig wat ervaring met Python. Toch valt er nog oneindig over te leren (veel meer nog dan we hier nog kunnen toevoegen). In dit boekje breiden we je programmeer-arsenaal uit met 2 belangrijke concepten: Objects en Error Handling.

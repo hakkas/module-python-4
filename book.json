@@ -1,0 +1,19 @@
+{
+    "plugins": ["googledocs", "python-visualizer", "youtube"],
+    "pluginsConfig": {
+      "googledocs": {
+          "rm": "minimal",
+          "frameborder": "0",
+          "width": "500px",
+          "height": "500px",
+          "noembed": "new window"
+      },
+      "youtubex": {
+        "embedDescription": {
+          "en": "Watch this video!",
+          "de": "Eingebettetes video:"
+        }
+      }
+
+  }
+}
