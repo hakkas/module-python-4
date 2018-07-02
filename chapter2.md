@@ -1,8 +1,15 @@
 # Classes
 
-In OOP draait alles om classes (klassen) en objects/instances (objecten of instanties).
+In object georienteerd programmeren (OOP) draait alles om classes (klassen) en objects/instances (objecten of instanties).
 
-Je hebt al eerder met objecten leren werken, maar in deze lesbrief gaan we meer de diepte in. Een class kunnen we zien als een soort sjabloon. Of een malletje … een blauwdruk. En een object is een _instantie_ van dat sjabloon.
+Je hebt al eerder met objecten leren werken (zie bijvoorbeeld de modules JavaScript voor games - 0 en JavaScript voor Web - 0), maar in deze lesbrief gaan we meer de diepte in. Een class kunnen we zien als een soort sjabloon. Of een malletje … een blauwdruk. En een object is een _instantie_ van dat sjabloon.
+
+![](./images/classesvsobjects.png)
+
+Zoals je hierboven ziet is de abstracte auto een class. En zijn de verschillende concrete auto's objecten/instanties van die class.
+Een ander voorbeeld:
+
+![](./images/class vb person.png)
 
 Laten we even met het voorbeeld van een persoon verder gaan. We maken een class genaamd Persoon.
 
