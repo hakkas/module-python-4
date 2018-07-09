@@ -16,7 +16,8 @@ Het basisprincipe van error handling is eigenlijk vrij eenvoudig:
 
 Laten we eerst maar eens wat dingen expres mis laten lopen om een beetje een gevoel te krijgen wat er zoal stuk kan gaan.
 
-Maak hiervoor opdracht 9 in repl.it!
+> #### Note::Opgave 9
+Maak nu opgave 9 in repl.it
 
 Je hebt nu een aantal foutmeldingen uitgeprobeerd. Er zijn er nog (heel) veel meer (kijk voor de grap maar eens naar de hele [lijst](https://docs.python.org/3/library/exceptions.html)). Dat python onderscheid maakt tussen zoveel verschillende foutmeldingen is een goede zaak. Zoals we gaan zien kun je fouten “vangen” en afhandelen. Hierbij kun je verschillende soorten fouten op een verschillende manier behandelen en voor elke fout de juiste oplossing inbouwen.
 
@@ -32,4 +33,5 @@ Hierin leer je:
 * Catch blok met algemene Exceptions
 * Finally block
 
-Maak nu opgave 9 in repl.it.
+> #### Note::Opgave 10
+Maak nu opgave 10 in repl.it

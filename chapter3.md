@@ -10,6 +10,9 @@ Hierin leer je:
 
 Het voorbeeldje uit het filmpje is simpel, maar inheritance is een erg krachtig concept. Je kunt zo een hele stamboom van classes maken die steeds specifieker worden. Hierdoor heb je nergens dubbele code, maar wel veel verschillende bruikbare classes met (deels) andere eigenschappen.
 
+> #### Note::Opgave 6
+Maak nu opgave 6 in repl.it
+
 ## Methoden van je parent aanpassen
 
 Hoewel het fijn is dat je methoden die je geërfd hebt kunt vervangen, gooi je daarmee soms ook veel nuttige code weg. Je schrijft namelijk de hele methode opnieuw, terwijl je soms gewoon een kleine toevoeging wilt doen aan de geërfde methode.
@@ -51,10 +54,15 @@ en mijn stafnummer is: 104
 ```
 
 In de code zie je 2 klassen: Persoon en Medewerker.  Medewerker is een kindklasse van Persoon en erft zowel de __init__() methode als de wie_ben_ik() methode van Persoon.
-Beide methoden worden in Medewerker overschreven door een nieuwe versie, maar op een andere manier dan tot nu: De code uit de originele methode van de parent wordt hierbij steeds eerst aangeroepen ( Persoon.__init__(self, voor, achter) en Persoon.wie_ben_ik(self)) en vervolgens worden er nog dingen aan toegevoegd. De schrijfwijze hiervan lijkt op het gewoon aanroepen van een methode met 2 verschillen:
+
+Beide methoden worden in Medewerker overschreven door een nieuwe versie, maar op een andere manier dan tot nu: De code uit de originele methode van de parent wordt hierbij steeds eerst aangeroepen ( ```Persoon.__init__(self, voor, achter)``` en ```Persoon.wie_ben_ik(self))``` en vervolgens worden er nog dingen aan toegevoegd. De schrijfwijze hiervan lijkt op het gewoon aanroepen van een methode met 2 verschillen:
 Je noemt de naam van de parent-klasse (in dit geval Persoon) in plaats van de naam van de instantie
 De self parameter moet ook worden opgegeven
+
 Bekijk de code goed en zorg dat je goed begrijpt hoe het aanroepen van een methode van de parent werkt.
+
+> #### Note::Opgave 7
+Maak nu opgave 7 in repl.it
 
 ## Meervoudige overerving
 Bij overerving ben je niet beperkt tot 1 parent class. Een nieuwe klasse kan variabelen en functies erven van meerdere klassen tegelijk. Een voorbeeld zie je in het volgende filmpje:
@@ -64,6 +72,9 @@ Bij overerving ben je niet beperkt tot 1 parent class. Een nieuwe klasse kan var
 Hierin zie je:
 * Het erven van functies uit 2 verschillende classes
 * Een aantal dingen komen nog niet naar voren in het eenvoudige voorbeeld van het filmpje. Multiple inheritance is in sommige gevallen zeker handig, maar kan ook voor nieuwe problemen zorgen.
+
+> #### Note::Opgave 8
+Maak nu opgave 8 in repl.it
 
 ### Multiple inheritance probleem 1: conflicterende methoden
 Bij meervoudige overerving kunnen gemakkelijk conflicten ontstaan. Bekijk het volgende voorbeeldje:

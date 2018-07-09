@@ -7,3 +7,7 @@ In deze module leer je hoe je object georienteerd kunt programmeren in Python. I
 Bij dit boekje horen ook online opgaven. Deze staan in repl.it. Hieronder de link:
 
 [Invite voor de repl.it classroom van de module Python-4](https://repl.it/classroom/invite/Vzu3qEQ)
+
+![](./images/creative.png)
+
+*Delen onder Creative Commons toegestaan*

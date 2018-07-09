@@ -2,12 +2,18 @@
 
 In object georienteerd programmeren (OOP) draait alles om classes (klassen) en objects/instances (objecten of instanties).
 
-Je hebt al eerder met objecten leren werken (zie bijvoorbeeld de modules JavaScript voor games - 0 en JavaScript voor Web - 0), maar in deze lesbrief gaan we meer de diepte in. Een class kunnen we zien als een soort sjabloon. Of een malletje … een blauwdruk. En een object is een _instantie_ van dat sjabloon.
+Je hebt al eerder met objecten leren werken (zie bijvoorbeeld de modules JavaScript voor games - 0 en JavaScript voor Web - 0), maar in deze lesbrief gaan we meer de diepte in. Een _class_ kunnen we zien als een soort _sjabloon_ of een _malletje_. Je kunt het vergelijken met van die Play Doh malletjes.
 
+![](./images/playdoh.jpg)
+
+Als je eenmaal zo'n Peppa Pig malletje hebt, dan kun je vrij makkelijk meerdere Peppa Pigs maken. Een class is dus zo'n malletje: je hoeft het maar één keer te programmeren. Vervolgens kun je daar meerdere _objecten/instanties_ van maken.
+
+Een ander voorbeeld:
 ![](./images/classesvsobjects.png)
 
-Zoals je hierboven ziet is de abstracte auto een class. En zijn de verschillende concrete auto's objecten/instanties van die class.
-Een ander voorbeeld:
+Zoals je hierboven ziet is de gestippelde Auto een class. En er zijn de verschillende auto's objecten/instanties van die class. De class Auto noemen we ook wel abstract omdat je hem in het echt niet zou kunnen aanwijzen. De concrete objecten zou je wel kunnen aanwijzen.
+
+Weer een ander voorbeeld:
 
 ![](./images/class vb person.png)
 
@@ -22,16 +28,16 @@ class Persoon:
         print ("Ik ben " + str(self.age) + " jaar oud!")
 ```
 
-Functies die in een class worden gedefinieerd worden _methoden_ genoemd. In dit geval hebben we twee methodes:
+Functies die je _in_ een class definieert worden _methoden_ genoemd. In dit geval hebben we twee methodes:
 * De ```__init__()``` methode
 * en de ```printLeeftijd()``` methode.
 
-De ```__init__()``` methode is een bijzondere. Het is namelijk een constructor: de methode die automatisch wordt aangeroepen zodra je een object van het type Persoon aanmaakt. Methoden krijgen altijd de parameter self mee. Self is een referentie naar het object zelf. Je kunt natuurlijk ook andere parameters opgeven. Die komen na self. In dit geval hebben we de constructor de parameter ```_age``` meegegeven. Dus als we een object van het type Persoon instantiëren, dan moeten we een leeftijd opgeven. Dat wordt dan opgeslagen in de property (eigenschap) self.age.
+De ```__init__()``` methode is een bijzondere. Het is namelijk een _constructor_: de methode die automatisch wordt aangeroepen zodra je een object van het type Persoon aanmaakt. Methoden krijgen altijd de parameter _self_ mee. ```Self``` is een referentie naar het object zelf. Hierover later meer. Je kunt natuurlijk ook andere parameters opgeven. Die komen na ```self```. In dit geval hebben we de constructor de parameter ```_age``` meegegeven. Dus als we een object van het type Persoon instantiëren, dan moeten we een leeftijd opgeven. Dat wordt dan opgeslagen in de property (eigenschap) self.age.
 
 Het instantiëren van een object van het type Persoon doen we zo:
 
 ```python
-henk = Person(36)
+henk = Persoon(36)
 henk.printLeeftijd()
 ```
 We roepen ook nog even de methode ```printLeeftijd()``` aan.
@@ -76,7 +82,7 @@ jurre.printAlles()
 ```
 Je programmeert zo'n class dus een keer en je kunt er meerdere instanties van maken.
 
-Bekijk ook het volgende filmpje met een voorbeeld en uitleg over de basics van Python classes:
+Bekijk ook het volgende filmpje met een voorbeeld en uitleg over de basics van Python classes en objecten:
 
 {%youtube%}POQIIKb1BZA{%endyoutube%}
 
@@ -87,16 +93,26 @@ Hierin leer je:
 * Instanties (objects) maken
 * Het maken van meerdere instanties (objects) van een klasse en het gebruik ervan
 
+> #### Note::Opgave 1
+Maak nu opgave 1 in repl.it
+
+========
+
+> #### Note::Opgave 2
+Maak nu opgave 2 in repl.it
 
 ## init() en methoden met parameters
 
-Bij het maken van een nieuw object is het vaak handig als meteen een stukje code wordt uitgevoerd dat de startwaarden van het object goed instelt. Hiertoe dient de speciale ```__init__()``` methode. Methodes kunnen natuurlijk (net als gewone functies) meerdere parameters hebben. Bekijk het volgende filmpje:
+Bij het maken van een nieuw object is het vaak handig als meteen een stukje code wordt uitgevoerd dat de startwaarden van het object goed instelt. Hiertoe dient dus die speciale ```__init__()``` methode. Methodes kunnen natuurlijk (net als gewone functies) meerdere parameters hebben. Bekijk het volgende filmpje:
 
 {%youtube%}G8kS24CtfoI{%endyoutube%}
 
 Hierin leer je:
 * Werking van de speciale ```__init__()``` functie bij classes
-* (extra) parameters naast self voor functies
+* (extra) parameters naast ```self``` voor functies
+
+> #### Note::Opgave 3
+Maak nu opgave 3 in repl.it
 
 ## Standaard waarden voor functieparameters
 
@@ -111,6 +127,7 @@ In het voorbeeld zijn a en b de parameters. Een aanroep van de functie zou nu ku
 ```python
 telop(10,86)
 ```
+
 En als antwoord zal de waarde 96 worden teruggegeven. In de aanroep hierboven is dus voor a de waarde 10 en voor b de waarde 86 opgegeven. De functie gebruikt de opgegeven waarden in zijn code.
 Soms kan het handig zijn om voor een functie een of meerdere _standaardwaarden_ op te geven voor de parameters. Hiermee geef je de aanroeper van de functie de mogelijkheid om enkele parameters “leeg” te laten. Hiervoor wordt dan de standaardwaarde gebruikt. Een voorbeeld maakt dit duidelijk:
 
@@ -150,6 +167,9 @@ voorbeeld(13,14)
 
 Dit betekent nu dat b gelijk is aan 13, a gelijk aan 14 en c gelijk aan zijn standaardwaarde 20.
 
+> #### Note::Opgave 4
+Maak nu opgave 4 in repl.it
+
 ## Class variables en instance variables
 Er zijn verschillende termen voor variabelen die in een class gebruikt worden:
 * Class variables: Variabelen die in de klasse definitie worden gezet. De waarde hiervan is dus hetzelfde voor alle objecten (instanties) van deze klasse.
@@ -158,3 +178,6 @@ Er zijn verschillende termen voor variabelen die in een class gebruikt worden:
 Niet super lastig, maar belangrijk om deze termen te kennen en uit elkaar te kunnen houden. Bekijk het volgende filmpje voor een korte uitleg met een voorbeeld:
 
 {%youtube%}qSDiHI1kP98{%endyoutube%}
+
+> #### Note::Opgave 5
+Maak nu opgave 5 in repl.it
